@@ -1,10 +1,12 @@
 ## Installation
 
+*This installation assumes the presence of PHP 8.1 or above, Composer, Make, Docker and Docker Compose. If these are not present, please refer to their respective documentations to install them.*
+
 1. Clone this repository
 	```
 	git clone https://github.com/frenchykiller/moviedb.git
 	```
-2. Navigate into the created folder and run the setup command provided by the makefile
+2. Navigate into the created folder and run the setup command provided by the Makefile
 	```
 	make setup
 	```
