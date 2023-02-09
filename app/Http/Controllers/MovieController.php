@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class MovieController extends Controller
 {
@@ -14,7 +14,11 @@ class MovieController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        $res = Http::withToken(config('auth.api_key'))->get('https://api.themoviedb.org/3/trending/movie/day');
+        // var_dump($res->json('results'));
+        return view('welcome', [
+            'results' => $res->json('results'),
+        ]);
     }
 
     /**
