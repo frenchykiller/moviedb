@@ -8,6 +8,7 @@
 	```
 	make setup
 	```
+3. The website should be accessible [here](http://localhost)
 
 
 ## Research & sites
