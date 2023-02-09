@@ -6,6 +6,7 @@ use Illuminate\View\Component;
 
 class MovieCard extends Component
 {
+    public $id;
     public $title;
     public $poster;
     public $releasedate;
@@ -16,8 +17,9 @@ class MovieCard extends Component
      *
      * @return void
      */
-    public function __construct($title, $poster, $releasedate, $overview)
+    public function __construct($id, $title, $poster, $releasedate, $overview)
     {
+        $this->id = $id;
         $this->title = $title;
         $this->poster = $poster;
         $this->releasedate = $releasedate;
