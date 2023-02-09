@@ -4,14 +4,11 @@
 	```
 	git clone https://github.com/frenchykiller/moviedb.git
 	```
-2. Navigate into the created folder and install composer dependencies
+2. Navigate into the created folder and run the setup command provided by the makefile
 	```
-	composer install
+	make setup
 	```
-3. Start the dockerized app using Sail
-	```
-	./vendor/bin/sail up -d
-	```
+
 
 ## Research & sites
 

@@ -22,7 +22,6 @@
             </div>
             <!-- Modal footer -->
             <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                footer
             </div>
         </div>
     </div>
